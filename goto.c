@@ -3,16 +3,18 @@
 int main(){
 
     int x;
+    
+
     here:
-    printf("Enter number between 1-10: ");
-    scanf("%d\n",x);
+    printf("Enter a number between 1 and 10: ");
+    scanf("%d",&x);
 
-    if(x<1 && x>10){
+    if(x<1 || x>10 ){
         goto here;
-
-    } else {
-        printf("Thats right.\n");
+    } 
+    else {
+        printf("Your right");
     }
-
+    
     return 0;
 }
